@@ -5,10 +5,18 @@ function validar(){
     var puesto = document.getElementById("puesto").value;
     var edad = document.getElementById("edad").value;
     var sueldo = document.getElementById("sueldo").value;
-    var retencion = document.getElementById("retencion").value;
 
-    var name = window.encodeURI(nombre)
-    fetch("https://almita-particion-express.cyclic.app/particion/?name=" +name, {method : 'GET',})
+    console.log("sigue funcionando");
+
+    //preparamos las variables para usar el fetch
+    var name = window.encodeURI(nombre);
+    var desp = window.encodeURI(despacho);
+    var puest = window.encodeURI(puesto);
+    var age = window.encodeURI(edad);
+    var net = window.encodeURI(sueldo);
+
+    //mandamos las variables al fetch
+    fetch("https://almita-particion-express.cyclic.app/particion/?name=" +name+"&desp="+desp+"&puest="+puest+"&age="+age+"&net="+net, {method : 'GET',})
     .then(function(response) {
         return response.json(); })
         .then(function(json) {
