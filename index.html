@@ -6,9 +6,50 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen" />
         <script src="./js/logic.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <title>Particiones y validaciones</title>
     </head>
     <body>
+        <div class="container">
+            <h1>
+                Particiones
+            </h1>
+            <form action="#">
+                <label>Nombre</label>
+                <input type="text" id="nombre">
 
+                <br>
+
+                <label>Despacho</label>
+                <input type="text" id="despacho">
+
+                <br>
+
+                <label>Puesto</label>
+                <input type="text" id="puesto">
+
+                <br>
+
+                <label>Edad</label>
+                <input type="text" id="edad">
+
+                <br>
+                
+                <label>Sueldo neto</label>
+                <input type="text" id="sueldo">
+
+                <br>
+
+                <label>Retencion</label>
+                <input type="text" id="retencion">
+
+                <br>
+
+                <input class="btn waves-effect waves-light" type="submit" onclick="validar();">
+            </form>
+        </div>
+        
     </body>
 </html>
