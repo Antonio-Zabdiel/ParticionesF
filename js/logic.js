@@ -6,6 +6,7 @@ function validar(){
     var edad = document.getElementById("edad").value;
     var sueldo = document.getElementById("sueldo").value;
 
+    //comprovamos que valores se estan mandando
     console.log(nombre);
     console.log(despacho);
     console.log(puesto);
