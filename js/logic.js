@@ -6,7 +6,11 @@ function validar(){
     var edad = document.getElementById("edad").value;
     var sueldo = document.getElementById("sueldo").value;
 
-    console.log("sigue funcionando");
+    console.log(nombre);
+    console.log(despacho);
+    console.log(puesto);
+    console.log(edad);
+    console.log(sueldo);
 
     //preparamos las variables para usar el fetch
     var name = window.encodeURI(nombre);

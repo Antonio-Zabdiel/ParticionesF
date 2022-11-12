@@ -1,3 +1,14 @@
 body{
-    background-color: rgb(231, 210, 243);
+    background-color: rgb(197, 171, 209);
+}
+
+.fondodiv{
+    background-color: rgba(6, 189, 251, 0.189);
+}
+
+hr{
+    border: 3px solid rgb(21, 120, 128); 
+    border-radius: 300px/10px; 
+    height: 0px; 
+    text-align: center;
 }
