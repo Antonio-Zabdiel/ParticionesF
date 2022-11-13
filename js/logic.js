@@ -27,5 +27,8 @@ function validar(){
         .then(function(json) {
         var data=json.data
         console.log(data)
+        if(data.error != 1){
+            alert(data.error)
+        }
     })
 }
